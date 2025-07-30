@@ -1,6 +1,8 @@
 from stats import get_num_words
+from stats import letter_count
 
 def main():
+
 
     def get_book_text(filepath):
      with open(filepath) as f:
@@ -14,5 +16,6 @@ def main():
 
 
     print(f"{num_words} words found in the document")
+    print(letter_count(book_content))
 
 main()
