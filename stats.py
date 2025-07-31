@@ -14,3 +14,16 @@ def letter_count(book_content):
         else:
             letters[text] = 1
     return letters
+
+
+def letter_list(letters):
+    char_list = []
+    for letter in letters:
+        count = letters[letter]
+        char_dict = {"char": letter, "num": count}
+        char_list.append(char_dict)
+    return char_list
+
+
+def sort_on(letters):
+     return letters["num"]
